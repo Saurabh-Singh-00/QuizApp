@@ -1,0 +1,60 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0F002D"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="16dp">
+
+    <TextView
+        android:id="@+id/app_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Solar System"
+        android:layout_gravity="center_horizontal"
+        android:textSize="38sp"
+        android:textAlignment="center"
+        android:textColor="#9EFA83"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:src="@drawable/splash_image"
+        android:layout_gravity="center_horizontal"
+        android:scaleType="fitCenter"/>
+
+    <TextView
+        android:id="@+id/splash_sub_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="How much do you know your Solar System ?\nSolve 10 Questions"
+        android:layout_gravity="center_horizontal"
+        android:textAlignment="center"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:textSize="24sp"
+        android:textColor="#DD8C2A"/>
+
+    <Button
+        android:id="@+id/start_quiz_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="24dp"
+        android:text="Start Quiz"
+        android:textAllCaps="false"
+        android:background="@drawable/rounded_button"
+        android:textSize="18sp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:onClick="startQuiz"/>
+
+    </LinearLayout>
+
+</ScrollView>
